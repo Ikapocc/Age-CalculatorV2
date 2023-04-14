@@ -1,0 +1,130 @@
+:root{
+    --color-purple: hsl(259, 100%, 65%);
+    --color-red: hsl(0, 100%, 67%);
+
+    --color-White: hsl(0, 0%, 100%);
+    --color-Offwhite: hsl(0, 0%, 94%);
+    --ColorLight-grey: hsl(0, 0%, 86%);
+    --colorSmokey-grey: hsl(0, 1%, 44%);
+
+    --font-size: 4rem; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--color-Offwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    background-color: var(--color-White);
+    border-radius: 40px;
+    border-bottom-right-radius: 40%;
+    padding: 50px 100px 50px 50px;
+    max-width: 650px;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-child{
+    color: var(--colorSmokey-grey);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.calculate > p > span{
+    color: var(--color-purple);
+}
+
+label{
+    display: block;
+}
+
+input{
+    color: var(--colorSmokey-grey);
+    border-radius: 5px;
+    border-color: var(--ColorLight-grey);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 80%;
+}
+
+input:hover{
+    border-color: var(--color-purple);
+}
+
+hr{
+    margin: 40px 0px 30px 0;
+    max-width: 100%;
+}
+
+h6{
+    display: none;
+}
+
+.redroom{
+    color: var(--color-red);
+}
+
+p, span{
+    font-size: var(--font-size);
+    font-style: italic;
+    font-weight: 700;
+}
+
+.btn{
+    position: absolute;
+    right: 20px;
+    border: none;
+    color: var(--color-White);
+    background-color: var(--color-purple);
+    border-radius: 50%;
+    display: block;
+    max-width: 300px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black;
+}
+
+@media (max-width: 800px){
+    .btn{
+        position: absolute;
+        left: 40%;
+        top: 25%;
+        right: auto;
+    }
+
+    hr{
+        margin: 70px auto;
+    }
+
+    .container{
+        position: relative;
+        max-width: 650px;
+        padding: 50px;
+    }
+    
+}

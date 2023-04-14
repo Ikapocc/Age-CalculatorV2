@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets\images\favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,800;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="main">
+            <div class="container">
+                <div class="date">
+                    <div class="date-child">
+                        <label for="day">day</label>
+                        <input type="text" id="day" name="day" value="" placeholder="DD" />
+                        <h6><i>This field is required</i></h6>
+                    </div>
+            
+                    <div class="date-child">
+                        <label for="month">month</label>
+                        <input type="text" id="month" name="month" value="" placeholder="MM" />
+                        <h6><i>This field is required</i></h6>
+                    </div>
+            
+                    <div class="date-child">
+                        <label for="year">year</label>
+                        <input type="text" id="year" name="year" value="" placeholder="YYYY" />
+                        <h6><i>This field is required</i></h6>
+                    </div>
+                </div>
+            
+                <button class="btn"><img src="assets\images\icon-arrow.svg" alt=""></button>
+                <hr>
+            
+                <div class="calculate">
+                    <p><span>--</span> years</p>
+                    <p><span>--</span> months</p>
+                    <p><span>--</span> days</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
